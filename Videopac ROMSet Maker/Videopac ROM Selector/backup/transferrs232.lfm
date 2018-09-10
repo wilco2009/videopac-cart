@@ -1,0 +1,81 @@
+object FormTransRAM: TFormTransRAM
+  Left = 843
+  Height = 215
+  Top = 805
+  Width = 508
+  Caption = 'Transfer to RAM Cart'
+  ClientHeight = 215
+  ClientWidth = 508
+  DesignTimePPI = 192
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '1.8.4.0'
+  object SerialComboBox: TComboBox
+    Left = 8
+    Height = 40
+    Top = 112
+    Width = 112
+    ItemHeight = 32
+    TabOrder = 0
+    Text = 'SerialComboBox'
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 32
+    Top = 88
+    Width = 107
+    Caption = 'Serial Port'
+    ParentColor = False
+  end
+  object RadioGroupBaudRate: TRadioGroup
+    Left = 0
+    Height = 82
+    Top = 0
+    Width = 122
+    AutoFill = True
+    Caption = 'Baud Rate'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 45
+    ClientWidth = 118
+    Items.Strings = (
+      '9600'
+      '19200'
+    )
+    OnSelectionChanged = RadioGroupBaudRateSelectionChanged
+    TabOrder = 1
+  end
+  object ButtonStart: TButton
+    Left = 184
+    Height = 34
+    Top = 176
+    Width = 150
+    Caption = 'Start Transfer'
+    OnClick = ButtonStartClick
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 352
+    Height = 34
+    Top = 176
+    Width = 150
+    Caption = 'Cancel'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object ListBoxRAMFiles: TListBox
+    Left = 128
+    Height = 160
+    Top = 6
+    Width = 374
+    ItemHeight = 0
+    OnSelectionChange = ListBoxRAMFilesSelectionChange
+    TabOrder = 4
+  end
+end

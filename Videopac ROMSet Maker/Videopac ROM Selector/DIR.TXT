@@ -1,0 +1,6 @@
+new_ktaa.bin
+vp_55_12.bin
+vp_55_12fix.bin
+vp_58_12.bin
+vp_59_16.bin
+vp_60_16.bin
