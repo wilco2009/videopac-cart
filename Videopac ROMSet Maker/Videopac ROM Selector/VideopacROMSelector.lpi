@@ -80,6 +80,7 @@
         <Filename Value="code.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form_Code"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit7>
     </Units>
@@ -95,8 +96,7 @@
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <CodeGeneration>
-      <TargetCPU Value="i386"/>
-      <TargetOS Value="win32"/>
+      <TargetOS Value="win64"/>
     </CodeGeneration>
     <Linking>
       <Options>

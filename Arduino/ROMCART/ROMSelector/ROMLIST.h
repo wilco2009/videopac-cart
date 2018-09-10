@@ -1,3 +1,6 @@
+#define MAX_NAME_LEN 30
+#define MAX_ROMSET_NAME 8
+
 #define MAXLEN 31
 
 static const unsigned long PROGMEM CRCList [] = {
@@ -695,6 +698,3 @@ string219,
 string220, 
 string221, 
 string222};
-
-
-

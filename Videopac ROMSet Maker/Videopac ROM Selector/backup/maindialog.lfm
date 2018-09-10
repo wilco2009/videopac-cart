@@ -4,7 +4,7 @@ object OpenROMDlg: TOpenROMDlg
   Top = 309
   Width = 750
   BorderStyle = bsSingle
-  Caption = 'VIDEOPAC ROMSET MAKER v1.5 (2018 - wilco2009)'
+  Caption = 'VIDEOPAC ROMSET MAKER v1.6 (2018 - wilco2009)'
   ClientHeight = 633
   ClientWidth = 750
   DesignTimePPI = 192

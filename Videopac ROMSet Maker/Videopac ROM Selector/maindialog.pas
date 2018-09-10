@@ -652,7 +652,10 @@ begin
     begin
       writeln(F, '#define FACT_ROMSET_', Itemindex, ' "', S, '"');
       writeln(F);
-      writeln(F, 'const unsigned long int PROGMEM ROMSET_CRC_',Itemindex,'[32] = {   ');
+      if Itemindex = 0 then
+         writeln(F, 'unsigned long int ROMSET_CRC[32] = {   ')
+      else
+          writeln(F, 'const unsigned long int PROGMEM ROMSET_CRC_',Itemindex,'[32] = {   ');
     end;
     for i :=0 to DestCRCList.Count-1 do
     begin
