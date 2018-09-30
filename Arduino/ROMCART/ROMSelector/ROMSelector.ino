@@ -1437,7 +1437,7 @@ void printStartScr(byte i){
 //    u8g2.drawXBMP(45, 0, 16, 16, Hombre_der2_16x16);
 //    u8g2.drawXBMP(68, 0, 16, 16, Hombre_izq1_16x16);
 //    u8g2.drawXBMP(90, 0, 16, 16, Hombre_izq2_16x16);
-    strcpy_P(str2, PSTR("version 1.0"));
+    strcpy_P(str2, PSTR("version 1.1"));
     u8g2.drawStr(25,15,str2);
     u8g2.drawXBMP(112, 0, 16, 16, Hombre1_16x16);
     if ((i % 2) == 0)
